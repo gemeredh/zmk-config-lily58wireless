@@ -88,6 +88,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &msc SCRL_DOWN  &mkp MB4        &mkp MB5      &trans           &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_4 {
@@ -98,6 +100,8 @@
 &kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B      &kp LBKT     &kp RBKT   &kp N     &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                            &kp LALT  &kp LGUI  &kp SPACE  &kp SPACE    &kp ENTER  &kp BSPC  &kp RALT  &kp LGUI
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 
