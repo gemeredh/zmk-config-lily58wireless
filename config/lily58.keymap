@@ -11,6 +11,15 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        games {
+            bindings = <&sl 4>;
+            key-positions = <42 43>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -89,6 +98,15 @@
 &kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B      &kp LBKT     &kp RBKT   &kp N     &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                            &kp LALT  &kp LGUI  &kp SPACE  &kp SPACE    &kp ENTER  &kp BSPC  &kp RALT  &kp LGUI
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        layer3 {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
