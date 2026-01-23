@@ -11,14 +11,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        games {
-            bindings = <&sl 4>;
-            key-positions = <42 43>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -87,18 +80,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &msc SCRL_DOWN  &mkp MB4        &mkp MB5      &trans           &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-        };
-
-        games {
-            bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                             &kp N6    &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                              &kp Y     &kp U     &kp I      &kp O    &kp P     &kp LBKT
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                              &kp H     &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B      &kp LBKT     &kp RBKT   &kp N     &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LALT  &kp LGUI  &kp SPACE  &kp SPACE    &kp ENTER  &kp BSPC  &kp RALT  &kp LGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
