@@ -16,7 +16,7 @@
 
         copy {
             bindings = <&kp K_COPY>;
-            key-positions = <14 15 16 15 16>;
+            key-positions = <42 43>;
         };
     };
 
